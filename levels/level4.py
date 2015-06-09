@@ -3,6 +3,28 @@
 
 __author__ = 'krajcovic'
 
+def fprintf(soubor, format, *args):
+    soubor.write(format % args)
+
+
+soucet = lambda a, b: a + b
+print(soucet(1,3))
+
+def make_incrementor(n):
+    return lambda x: x + n
+
+f = make_incrementor(42)
+print(f(0))
+print(f(1))
+
+def moje_funkce():
+    """Nic nedela, ale zdokumentujeme ji.
+
+    """
+    pass
+
+print(moje_funkce.__doc__)
+
 def fib(n):
     """
     Vytiskne fibonacciho rozvoj
@@ -11,7 +33,7 @@ def fib(n):
     """
     a, b = 0, 1
     while b < n:
-        print b,
+        print(b),
         a, b = b, a+b
 
 def yes_no(vyzva, opakovani = 4, upozorneni = 'Zbyva vam X pokusu'):
@@ -23,12 +45,13 @@ def yes_no(vyzva, opakovani = 4, upozorneni = 'Zbyva vam X pokusu'):
     :return:
     """
     while 1:
-        ok = raw_input(vyzva)
+        ok = input(vyzva)
         if ok in ('y', 'ye', 'yes'): return 1
         if ok in ('n', 'no'): return 0
         opakovani = opakovani - 1
-        if opakovani < 0: raise IOError, 'Ignorant user'
-        print upozorneni, opakovani
+        if opakovani < 0:
+            raise IOError('Ignorant user')
+        print(upozorneni, opakovani)
 
 
 def f(a, L=[]):
@@ -63,11 +86,11 @@ def big_burger(druh, *args, **keywords):
     :param keywords:
     :return:
     """
-    print "-- Mate", druh, "?"
-    print "-- Prominte, ", druh, " dosly."
-    for arg in args: print arg
-    print "-" * 40
-    for key in keywords.keys(): print key, ":", keywords[key]
+    print("-- Mate", druh, "?")
+    print("-- Prominte, ", druh, " dosly.")
+    for arg in args: print(arg)
+    print("-" * 40)
+    for key in keywords.keys(): print(key, ":", keywords[key])
 
 
 def inc(n):
@@ -79,23 +102,23 @@ def inc(n):
     return lambda x: x+n
 
 f = inc(0)
-print f(1)
-print f(3)
-print f(1)
-print "*"*40
+print(f(1))
+print(f(3))
+print(f(1))
+print("*"*40)
 
 soucet = lambda a, b: a+b
-print soucet(3,5)
+print(soucet(3,5))
 
 big_burger("cheesburgery", "Velice se omlouvam, pane.", "Opravdu se velice omlouvam, pane.", zakaznik="Adam", prodavac="Bedrich", obchod="Domaci Burgery")
 
-print f(1)
-print f(2)
-print f(3)
+print(f(1))
+print(f(2))
+print(f(3))
 
-print g(1)
-print g(2)
-print g(3)
+print(g(1))
+print(g(2))
+print(g(3))
 
 
 yes_no("test 4x: ")
