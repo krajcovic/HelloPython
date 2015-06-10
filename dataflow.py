@@ -22,7 +22,6 @@ for x in range(len(a)):
 
 exit(0)
 
-
 x = int(raw_input("Zadejte cele číslo: "))
 if x > 0:
     print ('Větší než nula')
