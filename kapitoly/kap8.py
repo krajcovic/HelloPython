@@ -59,5 +59,68 @@ print(number)
 
 for i in number:
     number[i] = i**2
-
 print(number)
+
+print("-----------")
+number = list(range(8))
+print(number)
+
+for i, value in enumerate(number):
+    number[i] = value ** 10
+print(number)
+
+print("-----------")
+number = list(range(5))
+print(number)
+print([x ** 2 for x in number if x**2 > 8])
+
+print("-----------")
+from os import listdir
+from os.path import isfile, join
+allfiles = [ f for f in listdir("../")]
+print(allfiles)
+
+print("-----------")
+from os import walk
+f = []
+for(dirpath, dirnames, filenames) in walk("../"):
+    f.extend(filenames)
+print(f)
+
+print("-----------")
+number = list(range(8))
+print(number)
+print([(x, x ** 2, x**3) for x in number])
+
+numbers = (1, 2, 3, 5)
+letters = ['a', 'b', 'c']
+result = [n*letter for n in numbers for letter in letters]
+print(result)
+
+print([v for v in "lopata"])
+
+print({v for v in "ABCDABCD" if v not in "CB"})
+
+d = {key:val for key, val in enumerate("ABCD") if val not in "CB"}
+print(d)
+
+listz = list(u'Žabička')
+print(listz)
+csv = ";".join(listz)
+print(csv)
+print(csv.split(sep=";"))
+
+a = [1, 2, 3]
+b = a[:]
+b[0] = 5
+print(a[0])
+
+print(list(range(10, 0, -2)))
+
+this = ['I', 'am', 'not', 'a', 'crook']
+that = ['I', 'am', 'not', 'a', 'crook']
+print(id(this), id(that))
+this = that
+print(id(this), id(that))
+
+
