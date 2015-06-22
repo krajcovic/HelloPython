@@ -23,10 +23,11 @@ long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=2
-FILE_NAME_0=280;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fworkspace%2Fsources%2Fpython%2FHelloPython%2Fdataflow.py;0;4
-FILE_NAME_1=710;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fworkspace%2Fsources%2Fpython%2FHelloPython%2Fkapitoly%2Fkap3.py;0;4
-FILE_NAME_2=895;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fworkspace%2Fsources%2Fpython%2FHelloPython%2Fkapitoly%2Fkap4.py;0;4
+current_page=3
+FILE_NAME_0=710;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fworkspace%2Fsources%2Fpython%2FHelloPython%2Fkapitoly%2Fkap3.py;0;4
+FILE_NAME_1=622;Python;0;16;1;1;0;%2Fhome%2Fpi%2Fworkspace%2Fsources%2Fpython%2FHelloPython%2Fkapitoly%2Fkap4.py;0;4
+FILE_NAME_2=0;Python;0;16;0;1;0;%2Fhome%2Fpi%2Fworkspace%2Fsources%2Fpython%2FHelloPython%2Fkapitoly%2Fkap6.py;0;4
+FILE_NAME_3=134;Python;0;16;0;1;0;%2Fhome%2Fpi%2Fworkspace%2Fsources%2Fpython%2FHelloPython%2Frpi%2Fjellybaby%2Fburp.py;0;4
 
 [VTE]
 last_dir=/home/pi
