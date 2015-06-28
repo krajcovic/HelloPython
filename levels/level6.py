@@ -4,8 +4,10 @@
 __author__ = 'krajcovic'
 __name__ = 'level6'
 
-import fibo
 import sys
+
+from levels import fibo
+
 #import py_compile
 
 #py_compile.compile(__name__ + '.py')
