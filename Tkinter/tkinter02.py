@@ -12,8 +12,10 @@ class Hello:
     def __init__(self,master):
         frame = Frame(master)
         frame.pack()
+
         self.button = Button(frame, text="QUIT", fg="red", command=frame.quit)
         self.button.pack(side=LEFT)
+
         self.hi = Button(frame, text="Nazdar!", command=self.say_hi)
         self.hi.pack(side=RIGHT)
 
