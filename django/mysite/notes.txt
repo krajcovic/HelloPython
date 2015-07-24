@@ -1,6 +1,19 @@
+# Nastartuje vyvojovy server (nepouzivat na produkci)
 python manage.py runserver
 
-Projekt muze obsahovat nekolik aplikaci a aplikace muze byt v nekolika projektech
+# Projekt muze obsahovat nekolik aplikaci a aplikace muze byt v nekolika projektech
 
-Vytvori applikaci
-pythons manage.py startapp pool
+# napoveda
+python manage.py help
+
+# Vytvori applikaci
+python manage.py startapp pool
+
+# Vytvori modely pro aplikaci
+python manage.py makemigrations pools
+
+# Ukaze co obsahuje nove modely
+python manage.py sqlmigrate pools 0001
+
+# Provede sql dotazy v novych modelech
+python manage.py migrate
