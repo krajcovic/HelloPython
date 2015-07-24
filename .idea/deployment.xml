@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="rpi2-root">
     <serverData>
-      <paths name="rpi2-home">
+      <paths name="rpi2-root">
         <serverdata>
           <mappings>
             <mapping deploy="/home/pi/workspace/sources/python/HelloPython" local="$PROJECT_DIR$" web="/" />
