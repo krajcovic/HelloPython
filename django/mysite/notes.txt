@@ -1,0 +1,6 @@
+python manage.py runserver
+
+Projekt muze obsahovat nekolik aplikaci a aplikace muze byt v nekolika projektech
+
+Vytvori applikaci
+pythons manage.py startapp pool
