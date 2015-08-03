@@ -17,3 +17,6 @@ python manage.py sqlmigrate pools 0001
 
 # Provede sql dotazy v novych modelech
 python manage.py migrate
+
+# Vytvori admin uzivatele
+python managa.py createsuperuser

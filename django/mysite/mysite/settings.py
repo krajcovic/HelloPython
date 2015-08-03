@@ -88,12 +88,14 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+#TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Prague'
 
 USE_I18N = True
 
 USE_L10N = True
 
+# Time zone is disabled by default. To enable it, use:
 USE_TZ = True
 
 
