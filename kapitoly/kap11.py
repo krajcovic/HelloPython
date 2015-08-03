@@ -19,10 +19,13 @@ print(inventory)
 print(len(inventory))
 print(eng2sp.keys())
 
-letter_counter = {}
-for letter in 'Missippi':
-    letter_counter[letter] = letter_counter.get(letter, 0) + 1
-print(letter_counter)
+def letterCounter(text):
+    letter_counter = {}
+    for letter in text:
+        letter_counter[letter] = letter_counter.get(letter, 0) + 1
 
-sorted_letter_counter = sorted(letter_counter.items())
-print(sorted_letter_counter)
+    return(sorted(letter_counter.items()))
+
+print(letterCounter("ZatraceneLehke"))
+
+
